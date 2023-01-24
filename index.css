@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
 * {
     display: flex;
     flex-direction: row;
@@ -13,6 +15,22 @@
     background: #FFFFFF;
 }
 
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: relative;
+    width: 1440px;
+    height: 960px;
+
+    /* Base/White */
+
+    border-right: 1px solid #3e609a;
+    background: #FFFFFF;
+}
+
 .sidebar {
     box-sizing: border-box;
 
@@ -23,15 +41,12 @@
 
     background: #FFFFFF;
     /* Gray/200 */
+    /* border-right: 1px solid #3e609a; */
 
-    border-right: 1px solid #EAECF0;
-
-    /* Inside auto layout */
-
-    flex: none;
+    /* flex: none;
     order: 0;
     align-self: stretch;
-    flex-grow: 0;
+    flex-grow: 0; */
 }
 
 .sub-nav {
@@ -42,7 +57,7 @@
     align-items: flex-start;
     padding: 0px;
     gap: 16px;
-    border-right: 1px solid rgb(222, 219, 219);
+    /* border-right: 1px solid rgb(222, 219, 219); */
     width: 81px;
     height: 960px;
 }
@@ -91,15 +106,73 @@
 } */
 
 .sub-content {
-    background-color: beige;
+    /* background-color: beige; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0px;
+    padding: 12px;
     gap: 16px;
 
     width: 281px;
     height: 960px;
+}
 
+.sub-content-upper {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #101828;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 8px;
+    /* background-color: aqua; */
+}
+
+.sub-content-upper-details {
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+    width: 249px;
+    height: 304px;
+
+}
+
+.sub-content-upper-details-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 12px;
+
+}
+
+.textt {
+    height: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344054;
+}
+
+.sub-content-lower {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    top: 20px;
+    padding: 0px 48px 24px 20px;
+    gap: 47px;
+    isolation: isolate;
+
+    width: 281px;
+    height: 64px;
 }
